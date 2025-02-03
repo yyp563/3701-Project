@@ -8,6 +8,7 @@ public class Player_PickUP : MonoBehaviour
     public GameObject items;
     public int itemsNum;
     public Text itemsText;
+    public Image image;
 
     public Transform flashlightSlot; 
     public GameObject flashlight;
@@ -46,7 +47,7 @@ public class Player_PickUP : MonoBehaviour
                 {
                     Destroy(items);
                     itemsNum += 1;
-                    itemsText.text = " ITEM NUM: " + itemsNum;
+                    itemsText.text = " ITEM O: " + itemsNum;
                 }
 
                 if (items != null && items.CompareTag("flashlight") && !isHoldingFlashlight)

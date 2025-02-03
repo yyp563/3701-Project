@@ -4,6 +4,7 @@ public class LightingSettingsManager : MonoBehaviour
 {
     [Header("调整 Lighting Settings -> Environment -> Intensity Multiplier")]
     [Range(0f, 2f)] // 设置滑动条范围
+    [SerializeField]
     public float intensityMultiplier = 1f;
 
     void Start()
