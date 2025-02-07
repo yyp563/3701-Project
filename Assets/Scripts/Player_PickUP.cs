@@ -6,7 +6,7 @@ public class Player_PickUP : MonoBehaviour
     public bool canPickUp;
     public GameObject Pickup_Box;
     public GameObject items;
-    public int itemsNum;
+    public int itemsNum; // 替换为图片
     public Text itemsText;
     public Image image;
 
@@ -17,7 +17,7 @@ public class Player_PickUP : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        image.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,9 +45,11 @@ public class Player_PickUP : MonoBehaviour
                 print("PICK UP");
                 if (items != null && items.CompareTag("items1"))
                 {
+                    
                     Destroy(items);
                     itemsNum += 1;
-                    itemsText.text = " ITEM O: " + itemsNum;
+                    image.gameObject.SetActive(true);
+                    //itemsText.text = " ITEM O: " + itemsNum;
                 }
 
                 if (items != null && items.CompareTag("flashlight") && !isHoldingFlashlight)
