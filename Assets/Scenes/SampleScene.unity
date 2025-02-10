@@ -1765,9 +1765,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pickup_Box: {fileID: 1063653078}
-  wrench: {fileID: 1691270973}
+  wrench: {fileID: 0}
   OpenSwitch: {fileID: 0}
   itemsText: {fileID: 2137357322}
+  image: {fileID: 1419614213}
   flashlightSlot: {fileID: 852177316}
   flashlight: {fileID: 1562551872}
   canPickUp: 0
@@ -2962,10 +2963,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1419614212}
   - {fileID: 636112328}
   - {fileID: 2137357321}
   - {fileID: 399671811}
+  - {fileID: 1419614212}
   - {fileID: 1063653079}
   - {fileID: 1234340594}
   - {fileID: 473671046}

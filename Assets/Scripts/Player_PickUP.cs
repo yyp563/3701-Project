@@ -8,6 +8,7 @@ public class Player_PickUP : MonoBehaviour
     public GameObject wrench;
     public GameObject OpenSwitch;
     public Text itemsText;
+    public Image image;
  
     public Transform flashlightSlot; 
     public GameObject flashlight;
@@ -31,12 +32,13 @@ public class Player_PickUP : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+        image.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         canPick();
         Switch();
 
@@ -89,7 +91,7 @@ public class Player_PickUP : MonoBehaviour
                     
                     Destroy(wrench);
                     haswrench += 1;
-                    //image.gameObject.SetActive(true);
+                    image.gameObject.SetActive(true);
                     //itemsText.text = " ITEM O: " + itemsNum;
                 }
 
