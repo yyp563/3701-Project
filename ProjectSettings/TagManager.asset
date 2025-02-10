@@ -6,6 +6,8 @@ TagManager:
   tags:
   - items1
   - flashlight
+  - npc
+  - npc1
   layers:
   - Default
   - TransparentFX
